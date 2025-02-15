@@ -290,7 +290,6 @@
 
     <section class="section">
       <div class="container is-max-desktop">
-        <!-- Animation. -->
         <div class="columns is-centered">
           <div class="column is-full-width">
             <h2 class="title is-3">Key points</h2>
@@ -299,7 +298,7 @@
             <h3 class="title is-4">Explore a one-dimensional subspace</h3>
             <div class="content has-text-justified">
               <p>
-                We can design a font by exploring a one-dimensional subspace of
+                Users can design a font by exploring a one-dimensional subspace of
                 the latent space.
               </p>
             </div>
@@ -340,7 +339,7 @@
             <h3 class="title is-4">Search subspace construction</h3>
             <div class="content has-text-justified">
               <p>
-                One-dimensional search subspace is constructed by Bayesian
+                One-dimensional search subspace is constructed by the preferential Bayesian
                 optimization or multimodal references.
               </p>
             </div>
@@ -353,7 +352,46 @@
                 />
               </div>
             </div>
-            <!--/ Re-rendering. -->
+            <!--/ Search subspace construction -->
+
+            <!-- Multimodal references -->
+            <h3 class="title is-4">Multimodal references</h3>
+            <div class="content has-text-justified">
+              <p>
+                Users can use multimodal references to guide the exploration.
+                They are handled by <a href="https://yukistavailable.github.io/fontclip.github.io/">FontCLIP</a> and embedded into the latent space.
+              </p>
+            </div>
+            <div class="content has-text-centered">
+              <div class="content has-text-justified">
+                <img
+                  src="./static/images/multimodalreferences.png"
+                  class="teaser-image"
+                  alt="Search subspace construction."
+                />
+              </div>
+            </div>
+            <!--/ Multimodal references -->
+
+            <!-- Retractable preference modeling -->
+            <h3 class="title is-4">Retractable preference modeling</h3>
+            <div class="content has-text-justified">
+              <p>
+                Our system allows users to revisit previous designs, retracting their earlier choices in the preferential Bayesian optimization process.
+                This feature frees users from the limitations of forward-direction design workflow.
+              </p>
+            </div>
+            <div class="content has-text-centered">
+              <div class="content has-text-justified">
+                <img
+                  src="./static/images/retractablemodeling.png"
+                  class="teaser-image"
+                  alt="Search subspace construction."
+                />
+              </div>
+            </div>
+            <!--/ Retractable preference modeling -->
+
           </div>
         </div>
         <!--/ Animation. -->
