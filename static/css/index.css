@@ -141,6 +141,12 @@ body {
   margin: 0 !important;
 }
 
+.interpolation-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 150px;
+}
+
 #interpolation-image-wrapper {
   width: 100%;
   text-align: center;
