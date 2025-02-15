@@ -14,11 +14,22 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@yukistachan" />
     <meta name="twitter:creator" content="@yukistachan" />
-    <meta property="og:url" content="https://yukistavailable.github.io/fontcraft.github.io/" />
-    <meta property="og:title" content="FontCraft: Multimodal Font Design Using Interactive Bayesian Optimization" />
-    <meta property="og:description"
-      content="FontCraft: Multimodal Font Design Using Interactive Bayesian Optimization" />
-    <meta property="og:image" content="https://yukistavailable.github.io/hosting/fontcraft_top.png" />
+    <meta
+      property="og:url"
+      content="https://yukistavailable.github.io/fontcraft.github.io/"
+    />
+    <meta
+      property="og:title"
+      content="FontCraft: Multimodal Font Design Using Interactive Bayesian Optimization"
+    />
+    <meta
+      property="og:description"
+      content="FontCraft: Multimodal Font Design Using Interactive Bayesian Optimization"
+    />
+    <meta
+      property="og:image"
+      content="https://yukistavailable.github.io/hosting/fontcraft_top.png"
+    />
     <title>
       FontCraft: Multimodal Font Design Using Interactive Bayesian Optimization
     </title>
@@ -294,106 +305,116 @@
           <div class="column is-full-width">
             <h2 class="title is-3">Key points</h2>
 
-            <!-- Explore the latent space. -->
-            <h3 class="title is-4">Explore a one-dimensional subspace</h3>
-            <div class="content has-text-justified">
-              <p>
-                Users can design a font by exploring a one-dimensional subspace of
-                the latent space.
-              </p>
+            <!-- Explore a one-dimensional subspace -->
+            <div class="box key-point">
+              <h3 class="title is-4">Explore one-dimensional subspace</h3>
+              <div class="content has-text-justified">
+                <p>
+                  Users can design a font by exploring a one-dimensional
+                  subspace of the latent space.
+                </p>
+              </div>
+              <div class="columns is-vcentered interpolation-panel">
+                <div class="column is-2 has-text-centered">
+                  <img
+                    src="./static/interpolation/h/0.svg"
+                    class="interpolation-image"
+                    alt="Interpolate start reference image."
+                  />
+                  <p>Edge</p>
+                </div>
+                <div class="column interpolation-video-column">
+                  <div id="interpolation-image-wrapper">Loading...</div>
+                  <input
+                    class="slider is-fullwidth is-large is-info"
+                    id="interpolation-slider"
+                    step="1"
+                    min="0"
+                    max="100"
+                    value="0"
+                    type="range"
+                  />
+                </div>
+                <div class="column is-2 has-text-centered">
+                  <img
+                    src="./static/interpolation/h/140.svg"
+                    class="interpolation-image"
+                    alt="Interpolation end reference image."
+                  />
+                  <p class="is-bold">Edge</p>
+                </div>
+              </div>
             </div>
-            <div class="columns is-vcentered interpolation-panel">
-              <div class="column is-2 has-text-centered">
-                <img
-                  src="./static/interpolation/h/0.svg"
-                  class="interpolation-image"
-                  alt="Interpolate start reference image."
-                />
-                <p>Edge</p>
-              </div>
-              <div class="column interpolation-video-column">
-                <div id="interpolation-image-wrapper">Loading...</div>
-                <input
-                  class="slider is-fullwidth is-large is-info"
-                  id="interpolation-slider"
-                  step="1"
-                  min="0"
-                  max="100"
-                  value="0"
-                  type="range"
-                />
-              </div>
-              <div class="column is-2 has-text-centered">
-                <img
-                  src="./static/interpolation/h/140.svg"
-                  class="interpolation-image"
-                  alt="Interpolation end reference image."
-                />
-                <p class="is-bold">Edge</p>
-              </div>
-            </div>
-            <br />
-            <!--/ Explore the latent space. -->
 
             <!-- Search subspace construction -->
-            <h3 class="title is-4">Search subspace construction</h3>
-            <div class="content has-text-justified">
-              <p>
-                One-dimensional search subspace is constructed by the preferential Bayesian
-                optimization or multimodal references.
-              </p>
-            </div>
-            <div class="content has-text-centered">
+            <div class="box key-point">
+              <h3 class="title is-4">Search subspace construction</h3>
               <div class="content has-text-justified">
-                <img
-                  src="./static/images/searchspaceconstruction.png"
-                  class="teaser-image"
-                  alt="Search subspace construction."
-                />
+                <p>
+                  One-dimensional search subspace is constructed by the
+                  preferential Bayesian optimization or multimodal references.
+                </p>
+              </div>
+              <div class="content has-text-centered">
+                <div class="content has-text-justified">
+                  <img
+                    src="./static/images/searchspaceconstruction.png"
+                    class="teaser-image"
+                    alt="Search subspace construction."
+                  />
+                </div>
               </div>
             </div>
-            <!--/ Search subspace construction -->
 
             <!-- Multimodal references -->
-            <h3 class="title is-4">Multimodal references</h3>
-            <div class="content has-text-justified">
-              <p>
-                Users can use multimodal references to guide the exploration.
-                They are handled by <a href="https://yukistavailable.github.io/fontclip.github.io/">FontCLIP</a> and embedded into the latent space.
-              </p>
-            </div>
-            <div class="content has-text-centered">
+            <div class="box key-point">
+              <h3 class="title is-4">Multimodal references</h3>
               <div class="content has-text-justified">
-                <img
-                  src="./static/images/multimodalreferences.png"
-                  class="teaser-image"
-                  alt="Search subspace construction."
-                />
+                <p>
+                  Users can use multimodal references to guide the exploration.
+                  They are handled by
+                  <a
+                    href="https://yukistavailable.github.io/fontclip.github.io/"
+                    >FontCLIP</a
+                  >
+                  and embedded into the latent space.
+                </p>
+              </div>
+              <div class="content has-text-centered">
+                <div class="content has-text-justified">
+                  <img
+                    src="./static/images/multimodalreferences.png"
+                    class="teaser-image"
+                    alt="Multimodal references."
+                  />
+                </div>
               </div>
             </div>
-            <!--/ Multimodal references -->
 
             <!-- Retractable preference modeling -->
-            <h3 class="title is-4">Retractable preference modeling</h3>
-            <div class="content has-text-justified">
-              <p>
-                Our system allows users to revisit previous designs, retracting their earlier choices in the preferential Bayesian optimization process.
-                This feature frees users from the limitations of forward-direction design workflow.
-              </p>
-            </div>
-            <div class="content has-text-centered">
+            <div class="box key-point">
+              <h3 class="title is-4">Retractable preference modeling</h3>
               <div class="content has-text-justified">
-                <img
-                  src="./static/images/retractablemodeling.png"
-                  class="teaser-image"
-                  alt="Search subspace construction."
-                />
+                <p>
+                  Our system allows users to revisit previous designs,
+                  retracting their earlier choices in the preferential Bayesian
+                  optimization process. This feature frees users from the
+                  limitations of forward-direction design workflow.
+                </p>
+              </div>
+              <div class="content has-text-centered">
+                <div class="content has-text-justified">
+                  <img
+                    src="./static/images/retractablemodeling.png"
+                    class="teaser-image"
+                    alt="Retractable preference modeling."
+                  />
+                </div>
               </div>
             </div>
-            <!--/ Retractable preference modeling -->
-
           </div>
         </div>
+
         <!--/ Animation. -->
 
         <!-- Concurrent Work. -->

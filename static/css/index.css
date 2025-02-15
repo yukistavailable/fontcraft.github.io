@@ -133,9 +133,6 @@ body {
   border-radius: 5px;
 }
 
-.interpolation-video-column {
-}
-
 .interpolation-panel .slider {
   margin: 0 !important;
 }
@@ -143,7 +140,6 @@ body {
 .interpolation-panel .slider {
   margin: 0 !important;
 }
-
 
 #interpolation-image-wrapper {
   width: 100%;
